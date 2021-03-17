@@ -22,20 +22,20 @@ public class SeleniumPracticeTekstacShopifyTests {
 	public static final String ALL_DATASHEET = "allFields";
 	public static final String MISSING_DATASHEET = "missingFields";
 	private WebDriver driver;
-	
+
 	@BeforeTest
 	public void setUpDriver()
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
-	
+
 	@BeforeMethod
 	public void setUpBuilder()
 	{
 		srpb = new ShopifyRegisterPageBuilder(new ShopifyRegisterPage(driver));
 	}
-	
+
 	@DataProvider(name = "all-sheet-data")
 	public Object[][] happyPath() throws IOException
 	{
@@ -43,10 +43,10 @@ public class SeleniumPracticeTekstacShopifyTests {
 				.map(formData -> new Object[]{formData.getFirstname(), formData.getLastname(), formData.getUsername(),
 						formData.getCity().toString(), formData.getGender().toString(), formData.getPassword(),
 						formData.getTableText(), formData.getError()}).toArray(Object[][]::new);
-		
+
 		return data;
 	}
-	
+
 	@DataProvider(name = "missing-sheet-data")
 	public Object[][] unHappyPath() throws IOException
 	{
@@ -54,10 +54,10 @@ public class SeleniumPracticeTekstacShopifyTests {
 				.map(formData -> new Object[]{formData.getFirstname(), formData.getLastname(), formData.getUsername(),
 						formData.getCity().toString(), formData.getGender().toString(), formData.getPassword(),
 						formData.getTableText(), formData.getError()}).toArray(Object[][]::new);
-		
+
 		return data;
 	}
-	
+
 	@Test
 	public void shopifyRegisterFormContainsAllFields()
 	{
@@ -75,7 +75,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 		// can use isEnabled() to ensure each field can be used
 		// can use isSelected() for checkbox and radio button
 	}
-	
+
 	@Test(dataProvider = "all-sheet-data")
 	public void fillOutFormAndSubmitTableCheck(String firstName, String lastName, String userName,
 			String city, String gender, String password, String tableText, String error)
@@ -87,15 +87,15 @@ public class SeleniumPracticeTekstacShopifyTests {
 		.withPassword(password)
 		.withGender(Gender.valueOf(gender)).build();
 
-		page.clickRegButton();	
-		
+		page.clickRegButton();
+
 		//WebElement table = page.getTable();
 		//List<WebElement> rows = page.getTableRows();
 		/*WebElement fName = table.findElement(By.xpath("//td[contains(text(),'Marley')]"));
 		WebElement lName = table.findElement(By.xpath("//td[contains(text(),'Breese')]"));
 		WebElement uName = table.findElement(By.xpath("//td[contains(text(),'marleybreese')]"));
 		WebElement city = table.findElement(By.xpath("//tbody/tr[3]/td[4]"));
-		
+
 		Assert.assertEquals(fName.getText(), "Marley");
 		Assert.assertEquals(lName.getText(), "Breese");
 		Assert.assertEquals(uName.getText(), "marleybreese");
@@ -103,19 +103,19 @@ public class SeleniumPracticeTekstacShopifyTests {
 		//OR
 		try
 		{
-			
+
 		}
 		catch(NoSuchElementException e)
 		{
-			
+
 		}
-		
+
 		String expected = tableText;
 		String actual = page.getLastRowText();
 		Assert.assertEquals(expected, actual);
 	}
 
-	
+
 	@Test(dataProvider = "missing-sheet-data")
 	public void errorForNoFieldsAndSubmit(String firstName, String lastName, String userName,
 			String city, String gender, String password, String tableText, String error)
@@ -139,21 +139,21 @@ public class SeleniumPracticeTekstacShopifyTests {
 		{
 			password = "";
 		}
-		
+
 		ShopifyRegisterPage page = srpb.withFirstName(firstName)
 				.withLastName(lastName)
 				.withUserName(userName)
 				.withCity(city)
 				.withPassword(password)
 				.withGender(Gender.valueOf(gender)).build();
-		
+
 		page.clickRegButton();
 		WebElement errors = page.getErrors();
-		
+
 		Assert.assertTrue(errors.isDisplayed());
 		Assert.assertEquals(errors.getText(),error);
 	}
-	
+
 	@Test
 	public void apachePOITest() throws IOException
 	{
@@ -161,13 +161,29 @@ public class SeleniumPracticeTekstacShopifyTests {
 
 		Assert.assertEquals(data.get(0).getFirstname(), "");
 	}
-	
+
+	@Test
+	public void shopifyRegisterFormFieldsEnabled()
+	{
+		Assert.assertTrue(srpb.build().getFirstNameTextbox().isEnabled());
+		Assert.assertTrue(srpb.build().getLastNameTextbox().isEnabled());
+		Assert.assertTrue(srpb.build().getUserNameTextbox().isEnabled());
+		Assert.assertTrue(srpb.build().getCitiesWebElement().isEnabled());
+		Assert.assertTrue(srpb.build().getPasswordTextbox().isEnabled());
+		Assert.assertTrue(srpb.build().getMaleRadio().isEnabled());
+		Assert.assertTrue(srpb.build().getFemaleRadio().isEnabled());
+		Assert.assertTrue(srpb.build().getOtherRadio().isEnabled());
+		Assert.assertTrue(srpb.build().getRegisterButton().isEnabled());
+		Assert.assertTrue(srpb.build().getCancelButton().isEnabled());
+		Assert.assertTrue(srpb.build().getTable().isEnabled());
+	}
+
 	@AfterMethod
 	public void clear()
 	{
 		driver.navigate().refresh();
 	}
-	
+
 	@AfterTest
 	public void quitAll()
 	{
