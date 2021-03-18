@@ -13,7 +13,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing....'
-        sh 'mvn test -B'
+        sh 'cd seleniumgenc && mvn test -B'
       }
     }
 
