@@ -23,14 +23,14 @@ public class SeleniumPracticeTekstacShopifyTests {
 	public static final String MISSING_DATASHEET = "missingFields";
 	private WebDriver driver;
 
-	@BeforeTest
+	@BeforeTest(groups={"shopifyRegister"})
 	public void setUpDriver()
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups={"shopifyRegister"})
 	public void setUpBuilder()
 	{
 		srpb = new ShopifyRegisterPageBuilder(new ShopifyRegisterPage(driver));
@@ -58,7 +58,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 		return data;
 	}
 
-	@Test
+	@Test(groups={"shopifyRegister"})
 	public void shopifyRegisterFormContainsAllFields()
 	{
 		Assert.assertTrue(srpb.build().getFirstNameTextbox().isDisplayed());
@@ -76,7 +76,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 		// can use isSelected() for checkbox and radio button
 	}
 
-	@Test(dataProvider = "all-sheet-data")
+	@Test(dataProvider = "all-sheet-data",groups={"shopifyRegister"})
 	public void fillOutFormAndSubmitTableCheck(String firstName, String lastName, String userName,
 			String city, String gender, String password, String tableText, String error)
 	{
@@ -116,7 +116,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 	}
 
 
-	@Test(dataProvider = "all-sheet-data")
+	@Test(dataProvider = "all-sheet-data",groups={"shopifyRegister"})
 	public void errorForNoFieldsAndSubmit(String firstName, String lastName, String userName,
 			String city, String gender, String password, String tableText, String error)
 	{
@@ -154,7 +154,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 		Assert.assertEquals(errors.getText(),error);
 	}
 
-	@Test
+	@Test(groups={"shopifyRegister"})
 	public void apachePOITest() throws IOException
 	{
 		List<ShopifyFormData> data = ShopifyExcelUtils.readDataFromExcel(excelPath, ALL_DATASHEET);
@@ -162,7 +162,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 		Assert.assertEquals(data.get(0).getFirstname(), "");
 	}
 
-	@Test
+	@Test(groups={"shopifyRegister"})
 	public void shopifyRegisterFormFieldsEnabled()
 	{
 		Assert.assertTrue(srpb.build().getFirstNameTextbox().isEnabled());
@@ -178,13 +178,13 @@ public class SeleniumPracticeTekstacShopifyTests {
 		Assert.assertTrue(srpb.build().getTable().isEnabled());
 	}
 
-	@AfterMethod
+	@AfterMethod(groups={"shopifyRegister"})
 	public void clear()
 	{
 		driver.navigate().refresh();
 	}
 
-	@AfterTest
+	@AfterTest(groups={"shopifyRegister"})
 	public void quitAll()
 	{
 		srpb.quitDriver();
