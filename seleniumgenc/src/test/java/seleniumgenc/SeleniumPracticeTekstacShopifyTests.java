@@ -159,7 +159,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 	{
 		List<ShopifyFormData> data = ShopifyExcelUtils.readDataFromExcel(excelPath, ALL_DATASHEET);
 
-		Assert.assertEquals(data.get(0).getFirstname(), "");
+		Assert.assertEquals(data.get(0).getFirstname(), "Gadget");
 	}
 
 	@Test(groups={"shopifyRegister"})
