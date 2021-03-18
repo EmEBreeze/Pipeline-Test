@@ -116,7 +116,7 @@ public class SeleniumPracticeTekstacShopifyTests {
 	}
 
 
-	@Test(dataProvider = "all-sheet-data",groups={"shopifyRegister"})
+	@Test(dataProvider = "missing-sheet-data",groups={"shopifyRegister"})
 	public void errorForNoFieldsAndSubmit(String firstName, String lastName, String userName,
 			String city, String gender, String password, String tableText, String error)
 	{
