@@ -2,7 +2,7 @@ package seleniumgenc;
 import seleniumgenc.pages.*;
 import seleniumgenc.utils.*;
 
-import java.io.IOException;
+import java.io.*;
 //import static org.testng.Assert.*;
 import java.util.*;
 
@@ -18,7 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class SeleniumPracticeTekstacShopifyTests {
 	//may not make final if need to concat other stuff to end
 	private ShopifyRegisterPageBuilder srpb;
-	private String excelPath = System.getProperty("user.dir") + "\\src\\test\\java\\excelFiles\\ShopifyTestData.xlsx";
+	private String sl = File.separator;
+	private String excelPath = System.getProperty("user.dir") + sl + "src" + sl + "test" + sl + "java" + sl + "excelFiles" + sl + "ShopifyTestData.xlsx";
 	public static final String ALL_DATASHEET = "allFields";
 	public static final String MISSING_DATASHEET = "missingFields";
 	private WebDriver driver;
