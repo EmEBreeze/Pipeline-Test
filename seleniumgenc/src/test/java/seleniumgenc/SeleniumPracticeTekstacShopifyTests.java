@@ -1,24 +1,33 @@
 package seleniumgenc;
-import seleniumgenc.pages.*;
-import seleniumgenc.utils.*;
-
-import java.io.IOException;
+import java.io.*;
 //import static org.testng.Assert.*;
-import java.util.*;
+import java.util.List;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.NoSuchElementException;
+//import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import seleniumgenc.pages.ShopifyRegisterPage;
+import seleniumgenc.pages.ShopifyRegisterPageBuilder;
+import seleniumgenc.utils.Gender;
+import seleniumgenc.utils.ShopifyExcelUtils;
+import seleniumgenc.utils.ShopifyFormData;
 
 public class SeleniumPracticeTekstacShopifyTests {
 	//may not make final if need to concat other stuff to end
 	private ShopifyRegisterPageBuilder srpb;
-	private String excelPath = System.getProperty("user.dir") + "\\src\\test\\java\\excelFiles\\ShopifyTestData.xlsx";
+	private String sl = File.separator;
+	private String excelPath = System.getProperty("user.dir") + sl + "src" + sl + "test" + sl + "java" + sl + "excelFiles" + sl + "ShopifyTestData.xlsx";
 	public static final String ALL_DATASHEET = "allFields";
 	public static final String MISSING_DATASHEET = "missingFields";
 	private WebDriver driver;
@@ -27,7 +36,10 @@ public class SeleniumPracticeTekstacShopifyTests {
 	public void setUpDriver()
 	{
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		
+		driver = new ChromeDriver(options);
 	}
 
 	@BeforeMethod(groups={"shopifyRegister"})
@@ -101,14 +113,6 @@ public class SeleniumPracticeTekstacShopifyTests {
 		Assert.assertEquals(uName.getText(), "marleybreese");
 		Assert.assertEquals(city.getText(), "Chennai");*/
 		//OR
-		try
-		{
-
-		}
-		catch(NoSuchElementException e)
-		{
-
-		}
 
 		String expected = tableText;
 		String actual = page.getLastRowText();
