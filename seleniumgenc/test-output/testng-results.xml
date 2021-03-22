@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="4" failed="2" skipped="0">
+<testng-results total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-25T17:43:16Z" name="Default suite" finished-at="2021-02-25T17:43:35Z" duration-ms="19944">
+  <suite started-at="2021-03-22T16:21:03Z" name="Default suite" finished-at="2021-03-22T16:21:40Z" duration-ms="37008">
     <groups>
+      <group name="shopifyRegister">
+        <method signature="SeleniumPracticeTekstacShopifyTests.apachePOITest()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" name="apachePOITest" class="seleniumgenc.SeleniumPracticeTekstacShopifyTests"/>
+        <method signature="SeleniumPracticeTekstacShopifyTests.errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" name="errorForNoFieldsAndSubmit" class="seleniumgenc.SeleniumPracticeTekstacShopifyTests"/>
+        <method signature="SeleniumPracticeTekstacShopifyTests.fillOutFormAndSubmitTableCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" name="fillOutFormAndSubmitTableCheck" class="seleniumgenc.SeleniumPracticeTekstacShopifyTests"/>
+        <method signature="SeleniumPracticeTekstacShopifyTests.shopifyRegisterFormContainsAllFields()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" name="shopifyRegisterFormContainsAllFields" class="seleniumgenc.SeleniumPracticeTekstacShopifyTests"/>
+        <method signature="SeleniumPracticeTekstacShopifyTests.shopifyRegisterFormFieldsEnabled()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" name="shopifyRegisterFormFieldsEnabled" class="seleniumgenc.SeleniumPracticeTekstacShopifyTests"/>
+      </group> <!-- shopifyRegister -->
     </groups>
-    <test started-at="2021-02-25T17:43:16Z" name="Default test" finished-at="2021-02-25T17:43:35Z" duration-ms="19944">
+    <test started-at="2021-03-22T16:21:03Z" name="Default test" finished-at="2021-03-22T16:21:40Z" duration-ms="37008">
       <class name="seleniumgenc.SeleniumPracticeTekstacShopifyTests">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:16Z" name="setUpDriver" finished-at="2021-02-25T10:43:21Z" duration-ms="5783" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:03Z" name="setUpDriver" finished-at="2021-03-22T09:21:14Z" duration-ms="11031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:22Z" name="setUpBuilder" finished-at="2021-02-25T10:43:24Z" duration-ms="2285" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:14Z" name="setUpBuilder" finished-at="2021-03-22T09:21:19Z" duration-ms="5058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:24Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:25Z" duration-ms="697" status="PASS">
+        <test-method signature="apachePOITest()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:19Z" name="apachePOITest" finished-at="2021-03-22T09:21:20Z" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apachePOITest -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:20Z" name="clear" finished-at="2021-03-22T09:21:21Z" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:21Z" name="setUpBuilder" finished-at="2021-03-22T09:21:22Z" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBuilder -->
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:22Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:22Z" duration-ms="749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,15 +76,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:25Z" name="clear" finished-at="2021-02-25T10:43:26Z" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:22Z" name="clear" finished-at="2021-03-22T09:21:23Z" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:26Z" name="setUpBuilder" finished-at="2021-02-25T10:43:26Z" duration-ms="594" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:23Z" name="setUpBuilder" finished-at="2021-03-22T09:21:24Z" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:26Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:27Z" duration-ms="529" status="PASS">
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:24Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:24Z" duration-ms="523" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,15 +126,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:27Z" name="clear" finished-at="2021-02-25T10:43:27Z" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:24Z" name="clear" finished-at="2021-03-22T09:21:25Z" duration-ms="649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:27Z" name="setUpBuilder" finished-at="2021-02-25T10:43:28Z" duration-ms="570" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:25Z" name="setUpBuilder" finished-at="2021-03-22T09:21:25Z" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:28Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:28Z" duration-ms="520" status="PASS">
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:25Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:26Z" duration-ms="507" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -157,15 +176,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:28Z" name="clear" finished-at="2021-02-25T10:43:29Z" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:26Z" name="clear" finished-at="2021-03-22T09:21:27Z" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:29Z" name="setUpBuilder" finished-at="2021-02-25T10:43:29Z" duration-ms="582" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:27Z" name="setUpBuilder" finished-at="2021-03-22T09:21:27Z" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:29Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:30Z" duration-ms="509" status="PASS">
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:27Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:28Z" duration-ms="533" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,15 +226,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:30Z" name="clear" finished-at="2021-02-25T10:43:31Z" duration-ms="590" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:28Z" name="clear" finished-at="2021-03-22T09:21:28Z" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:31Z" name="setUpBuilder" finished-at="2021-02-25T10:43:31Z" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:28Z" name="setUpBuilder" finished-at="2021-03-22T09:21:29Z" duration-ms="631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:31Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:32Z" duration-ms="482" status="FAIL">
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:29Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:30Z" duration-ms="491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,63 +267,23 @@
             </param>
             <param index="7">
               <value>
-                <![CDATA[Lastname can't be blank\nUserName can't be blank]]>
+                <![CDATA[Lastname can't be blank
+UserName can't be blank]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Lastname can't be blank\nUserName can't be blank] but found [Lastname can't be blank
-UserName can't be blank]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Lastname can't be blank\nUserName can't be blank] but found [Lastname can't be blank
-UserName can't be blank]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at seleniumgenc.SeleniumPracticeTekstacShopifyTests.errorForNoFieldsAndSubmit(SeleniumPracticeTekstacShopifyTests.java:142)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:32Z" name="clear" finished-at="2021-02-25T10:43:32Z" duration-ms="629" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:30Z" name="clear" finished-at="2021-03-22T09:21:30Z" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:32Z" name="setUpBuilder" finished-at="2021-02-25T10:43:33Z" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:30Z" name="setUpBuilder" finished-at="2021-03-22T09:21:31Z" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBuilder -->
-        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:33Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-02-25T10:43:33Z" duration-ms="471" status="FAIL">
+        <test-method signature="errorForNoFieldsAndSubmit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:31Z" name="errorForNoFieldsAndSubmit" data-provider="missing-sheet-data" finished-at="2021-03-22T09:21:31Z" duration-ms="500" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -333,63 +312,149 @@ UserName can't be blank]
             </param>
             <param index="7">
               <value>
-                <![CDATA[Firstname can't be blank\nLastname can't be blank\nUserName can't be blank\nPasswd can't be blank]]>
+                <![CDATA[Firstname can't be blank
+Lastname can't be blank
+UserName can't be blank
+Passwd can't be blank]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Firstname can't be blank\nLastname can't be blank\nUserName can't be blank\nPasswd can't be blank] but found [Firstname can't be blank
-Lastname can't be blank
-UserName can't be blank
-Passwd can't be blank]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Firstname can't be blank\nLastname can't be blank\nUserName can't be blank\nPasswd can't be blank] but found [Firstname can't be blank
-Lastname can't be blank
-UserName can't be blank
-Passwd can't be blank]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at seleniumgenc.SeleniumPracticeTekstacShopifyTests.errorForNoFieldsAndSubmit(SeleniumPracticeTekstacShopifyTests.java:142)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorForNoFieldsAndSubmit -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:33Z" name="clear" finished-at="2021-02-25T10:43:34Z" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:31Z" name="clear" finished-at="2021-03-22T09:21:32Z" duration-ms="635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
-        <test-method is-config="true" signature="quitAll()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@63eef88a]" started-at="2021-02-25T10:43:34Z" name="quitAll" finished-at="2021-02-25T10:43:35Z" duration-ms="1570" status="PASS">
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:32Z" name="setUpBuilder" finished-at="2021-03-22T09:21:33Z" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBuilder -->
+        <test-method signature="fillOutFormAndSubmitTableCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:33Z" name="fillOutFormAndSubmitTableCheck" data-provider="all-sheet-data" finished-at="2021-03-22T09:21:33Z" duration-ms="598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gadget]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Monroe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GadgeyPadgey]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Coimbatore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DaddysGirl]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Gadget Monroe GadgeyPadgey Coimbatore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillOutFormAndSubmitTableCheck -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:33Z" name="clear" finished-at="2021-03-22T09:21:34Z" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:34Z" name="setUpBuilder" finished-at="2021-03-22T09:21:35Z" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBuilder -->
+        <test-method signature="fillOutFormAndSubmitTableCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:35Z" name="fillOutFormAndSubmitTableCheck" data-provider="all-sheet-data" finished-at="2021-03-22T09:21:35Z" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jason ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Monroe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[JMoney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Jason Monroe JMoney Chennai]]>
+              </value>
+            </param>
+            <param index="7">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillOutFormAndSubmitTableCheck -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:35Z" name="clear" finished-at="2021-03-22T09:21:36Z" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:36Z" name="setUpBuilder" finished-at="2021-03-22T09:21:36Z" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBuilder -->
+        <test-method signature="shopifyRegisterFormContainsAllFields()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:36Z" name="shopifyRegisterFormContainsAllFields" finished-at="2021-03-22T09:21:37Z" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopifyRegisterFormContainsAllFields -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:37Z" name="clear" finished-at="2021-03-22T09:21:37Z" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="setUpBuilder()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:37Z" name="setUpBuilder" finished-at="2021-03-22T09:21:38Z" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBuilder -->
+        <test-method signature="shopifyRegisterFormFieldsEnabled()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:38Z" name="shopifyRegisterFormFieldsEnabled" finished-at="2021-03-22T09:21:38Z" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopifyRegisterFormFieldsEnabled -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:38Z" name="clear" finished-at="2021-03-22T09:21:39Z" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clear -->
+        <test-method is-config="true" signature="quitAll()[pri:0, instance:seleniumgenc.SeleniumPracticeTekstacShopifyTests@332729ad]" started-at="2021-03-22T09:21:39Z" name="quitAll" finished-at="2021-03-22T09:21:40Z" duration-ms="1235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitAll -->
